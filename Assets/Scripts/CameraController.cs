@@ -64,10 +64,10 @@ public class CameraController : MonoBehaviour {
 		// Be sure to account for the camera's "tilt"
 		// tan(x) = opposite/adjacent - do this for both X and Y
 		// tan(x) * adjacent = opposite
-		float xOffset = Mathf.Tan(Mathf.Deg2Rad * transform.eulerAngles.x) * 10;
-		float yOffset = Mathf.Tan(Mathf.Deg2Rad * transform.eulerAngles.y) * 10;
-		Debug.Log(xOffset + ", " + yOffset);
+		//float xOffset = Mathf.Tan(Mathf.Deg2Rad * transform.eulerAngles.x) * 10;
+		//float yOffset = Mathf.Tan(Mathf.Deg2Rad * transform.eulerAngles.y) * 10;
+		//Debug.Log(xOffset + ", " + yOffset);
 		
-		transform.position = new Vector3(target.position.x + xOffset, target.position.y + yOffset, transform.position.z);
+		transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);
 	}
 }

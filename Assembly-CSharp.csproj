@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{B0C00D43-58D8-F63A-257B-78D10DBE2F8C}</ProjectGuid>
+	<ProjectGuid>{C93FE04C-EA65-93E3-4B92-901688C966C2}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -45,12 +45,18 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\BallBehavior.cs" />
+     <Compile Include="Assets\Scripts\BoostBehavior.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Scripts\GoalBehavior.cs" />
      <Compile Include="Assets\Scripts\Todo.cs" />
      <Compile Include="Assets\Scripts\WallBehavior.cs" />
      <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit Premultiplied Alpha.shader" />
      <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit Alpha Enabled (Default).shader" />
      <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit No Alpha.shader" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{4A0EAD15-5AB9-121A-03F1-8FF3848A06F3}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
