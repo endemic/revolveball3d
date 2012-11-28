@@ -22,5 +22,13 @@ public class Todo : MonoBehaviour {
 	 * 1. Figure out if possible to write JSON to disk
 	 * 2. Test out UIToolKit, determine if it's possible to "parent" UI objects
 	 * 3. Determine if it's possible to adjust UIToolKit images based on screen size
+	 * 4. Learn about texture types
+	 * 
+	 * Breakable block particles don't get destroyed
+	 * Create bollard trigger
+	 * Create bouncing bumper
+	 * Create breakable block
+	 * Create collectable star
+	 * Write boilerplate for Game Manager singleton
 	 */
 }

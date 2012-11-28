@@ -3,12 +3,9 @@ using System.Collections;
 
 public class WallBehavior : MonoBehaviour {
 	
-	private AudioSource sound;
-	
 	// Use this for initialization
 	void Start () {
-		// Get reference to the audio clip
-		sound = gameObject.GetComponent<AudioSource>();
+		
 	}
 	
 	// Update is called once per frame
@@ -18,8 +15,13 @@ public class WallBehavior : MonoBehaviour {
 	
 	// Play sound effect on collision
 	void OnCollisionEnter(Collision collision) {
-		if (collision.relativeVelocity.magnitude > 1 && sound != null) {
-			sound.Play();
+		if (collision.relativeVelocity.magnitude > 1) {
+			// Get reference to the audio source
+			AudioSource sound = gameObject.GetComponent<AudioSource>();
+			
+			if (sound != null) {
+				sound.Play();
+			}
 		}
 	}
 }
