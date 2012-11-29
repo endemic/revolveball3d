@@ -24,10 +24,9 @@ public class Todo : MonoBehaviour {
 	 * 3. Determine if it's possible to adjust UIToolKit images based on screen size
 	 * 4. Learn about texture types
 	 * 
-	 * Breakable block particles don't get destroyed
+	 * Destroyed gameObjects won't play their sounds
 	 * Create bollard trigger
 	 * Create bouncing bumper
-	 * Create breakable block
 	 * Create collectable star
 	 * Write boilerplate for Game Manager singleton
 	 */

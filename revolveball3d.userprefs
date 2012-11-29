@@ -1,6 +1,14 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/StarBehavior.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Todo.cs" Line="27" Column="50" />
+      <File FileName="Assets/Scripts/GoalBehavior.cs" Line="28" Column="3" />
+      <File FileName="Assets/Scripts/BrokenBlockParticleBehavior.cs" Line="9" Column="35" />
+      <File FileName="Assets/Scripts/BreakableBlockBehavior.cs" Line="21" Column="1" />
+      <File FileName="Assets/Scripts/StarBehavior.cs" Line="18" Column="130" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

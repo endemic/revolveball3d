@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class BreakableWallBehavior : MonoBehaviour {
+public class BreakableBlockBehavior : MonoBehaviour {
 	
 	public Transform particle;
 	
@@ -17,12 +17,10 @@ public class BreakableWallBehavior : MonoBehaviour {
 	
 	// Play sound effect on collision
 	void OnCollisionEnter(Collision collision) {
-		if (collision.relativeVelocity.magnitude > 1) {
-			// Get reference to the audio source
-			AudioSource sound = gameObject.GetComponent<AudioSource>();
-			
-			if (sound != null) {
-				sound.Play();
+		if (collision.relativeVelocity.magnitude > 1 && collision.gameObject.CompareTag("Player")) {
+
+			if (audio != null) {
+				audio.Play();
 			}
 			
 			// Create 8 "particle" prefabs here

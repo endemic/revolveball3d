@@ -47,11 +47,12 @@
      <Compile Include="Assets\Scripts\BallBehavior.cs" />
      <Compile Include="Assets\Scripts\BollardBehavior.cs" />
      <Compile Include="Assets\Scripts\BoostBehavior.cs" />
-     <Compile Include="Assets\Scripts\BreakableWallBehavior.cs" />
-     <Compile Include="Assets\Scripts\BrokenWallParticleBehavior.cs" />
+     <Compile Include="Assets\Scripts\BreakableBlockBehavior.cs" />
+     <Compile Include="Assets\Scripts\BrokenBlockParticleBehavior.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\GoalBehavior.cs" />
+     <Compile Include="Assets\Scripts\StarBehavior.cs" />
      <Compile Include="Assets\Scripts\Todo.cs" />
      <Compile Include="Assets\Scripts\WallBehavior.cs" />
      <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit Premultiplied Alpha.shader" />
