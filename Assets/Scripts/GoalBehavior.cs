@@ -22,7 +22,7 @@ public class GoalBehavior : MonoBehaviour {
 		GameObject player = GameObject.FindGameObjectWithTag("Player");
 		
 		if (player != null) {
-			player.transform.position = Vector3.zero;	
+			player.transform.position = Vector3.zero;
 		}
 		
 		AudioSource sound = gameObject.GetComponent<AudioSource>();

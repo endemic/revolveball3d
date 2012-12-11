@@ -22,6 +22,8 @@ public class Todo : MonoBehaviour {
 	 * 1. Figure out if possible to write JSON to disk
 	 * 2. Test out UIToolKit, determine if it's possible to "parent" UI objects
 	 * 3. Determine if it's possible to adjust UIToolKit images based on screen size
+	 * 		- each object should have a "setSize" method. You could have a "screen" singleton which stores 
+	 * 		  DPI, resolution, and a "scale" factor
 	 * 4. Learn about texture types
 	 * 
 	 * Destroyed gameObjects won't play their sounds

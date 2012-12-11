@@ -46,17 +46,21 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\BallBehavior.cs" />
      <Compile Include="Assets\Scripts\BollardBehavior.cs" />
+     <Compile Include="Assets\Scripts\BollardTriggerBehavior.cs" />
      <Compile Include="Assets\Scripts\BoostBehavior.cs" />
      <Compile Include="Assets\Scripts\BreakableBlockBehavior.cs" />
      <Compile Include="Assets\Scripts\BrokenBlockParticleBehavior.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\GoalBehavior.cs" />
+     <Compile Include="Assets\Scripts\SceneUI.cs" />
      <Compile Include="Assets\Scripts\StarBehavior.cs" />
      <Compile Include="Assets\Scripts\Todo.cs" />
      <Compile Include="Assets\Scripts\WallBehavior.cs" />
      <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit Premultiplied Alpha.shader" />
+     <None Include="Assets\Resources\texture2x.txt" />
      <None Include="Assets\Plugins\GoKit\easing\easeEquationsLicense.txt" />
+     <None Include="Assets\Resources\texture.txt" />
      <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit Alpha Enabled (Default).shader" />
      <None Include="Assets\Plugins\UIToolkit\Shaders\UIToolkit No Alpha.shader" />
   </ItemGroup>
