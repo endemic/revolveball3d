@@ -27,9 +27,9 @@ public class Todo : MonoBehaviour {
 	 * 4. Learn about texture types
 	 * 
 	 * Destroyed gameObjects won't play their sounds
-	 * Create bollard trigger
 	 * Create bouncing bumper
 	 * Create collectable star
+	 * Fix camera angle to point directly towards ball
 	 * Write boilerplate for Game Manager singleton
 	 */
 }

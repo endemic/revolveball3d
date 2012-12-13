@@ -5,7 +5,7 @@ public class CameraController : MonoBehaviour {
 	
 	public Transform target;
 	
-	public int rotationSpeed = 75;
+	public int rotationSpeed = 150;
 	public float gravity = 9.8f;
 	
 	private float previousAngle, currentAngle;
@@ -45,7 +45,6 @@ public class CameraController : MonoBehaviour {
 		// Mouse controls
 		// "onTouchMove"
 		if (Input.GetMouseButton(0)) {
-			
 			currentAngle = Mathf.Atan2(Screen.height / 2 - currentInput.y, Screen.width / 2 - currentInput.x) * Mathf.Rad2Deg;
 
 			transform.Rotate(0, 0, previousAngle - currentAngle);
@@ -55,6 +54,26 @@ public class CameraController : MonoBehaviour {
 			Physics.gravity = newGravity;
 			
 			previousAngle = currentAngle;
+		}
+		
+		if (Input.touchCount > 0) {
+			currentInput = Input.touches[0].position;
+			
+			if (Input.touches[0].phase == TouchPhase.Began) {
+				previousAngle = Mathf.Atan2(Screen.height / 2 - currentInput.y, Screen.width / 2 - currentInput.x) * Mathf.Rad2Deg;
+			}
+			
+			if (Input.touches[0].phase == TouchPhase.Moved) {
+				currentAngle = Mathf.Atan2(Screen.height / 2 - currentInput.y, Screen.width / 2 - currentInput.x) * Mathf.Rad2Deg;
+
+				transform.Rotate(0, 0, previousAngle - currentAngle);
+				
+				Vector2 newGravity = new Vector2(Mathf.Sin(Mathf.Deg2Rad * transform.rotation.eulerAngles.z) * gravity, -Mathf.Cos(Mathf.Deg2Rad * transform.rotation.eulerAngles.z) * gravity);
+			
+				Physics.gravity = newGravity;
+				
+				previousAngle = currentAngle;
+			}
 		}
 		
 		// Alter the slightly "downward" angle of the camera
