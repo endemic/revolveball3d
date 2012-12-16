@@ -4,6 +4,7 @@ using System.Collections;
 public class BreakableBlockBehavior : MonoBehaviour {
 	
 	public Transform particle;
+	public AudioClip sfx;
 	
 	// Use this for initialization
 	void Start () {
@@ -19,9 +20,8 @@ public class BreakableBlockBehavior : MonoBehaviour {
 	void OnCollisionEnter(Collision collision) {
 		if (collision.relativeVelocity.magnitude > 1 && collision.gameObject.CompareTag("Player")) {
 
-			if (audio != null) {
-				audio.Play();
-			}
+			// Play a one-shot clip
+			AudioSource.PlayClipAtPoint(sfx, transform.position);
 			
 			// Create 8 "particle" prefabs here
 			// TODO: Have these fade out and then disappear

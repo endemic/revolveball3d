@@ -2,10 +2,12 @@ using UnityEngine;
 using System.Collections;
 
 public class StarBehavior : MonoBehaviour {
-
+	
+	public AudioClip sfx;
+	
 	// Use this for initialization
 	void Start () {
-	
+		//gameObject.AddComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -15,10 +17,8 @@ public class StarBehavior : MonoBehaviour {
 	}
 	
 	void OnTriggerEnter(Collider other) {
-		// Audio isn't playing -- look into this http://docs.unity3d.com/Documentation/ScriptReference/AudioSource.PlayClipAtPoint.html
-		if (audio != null) {
-			audio.Play();	
-		}
+		// Play a one-shot clip
+		AudioSource.PlayClipAtPoint(sfx, transform.position);
 		
 		// TODO: Send message that a star has been picked up
 		

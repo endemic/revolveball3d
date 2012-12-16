@@ -26,10 +26,9 @@ public class Todo : MonoBehaviour {
 	 * 		  DPI, resolution, and a "scale" factor
 	 * 4. Learn about texture types
 	 * 
-	 * Destroyed gameObjects won't play their sounds
 	 * Create bouncing bumper
-	 * Create collectable star
-	 * Fix camera angle to point directly towards ball
+	 * Create a sample prefab level
+	 * Add timer text to the top of the screen
 	 * Write boilerplate for Game Manager singleton
 	 */
 }

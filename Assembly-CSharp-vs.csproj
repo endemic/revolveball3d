@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\BoostBehavior.cs" />
      <Compile Include="Assets\Scripts\BreakableBlockBehavior.cs" />
      <Compile Include="Assets\Scripts\BrokenBlockParticleBehavior.cs" />
+     <Compile Include="Assets\Scripts\BumperBehavior.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\GoalBehavior.cs" />
